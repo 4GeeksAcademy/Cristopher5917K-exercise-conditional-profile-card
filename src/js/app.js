@@ -40,15 +40,16 @@ function render(variables = {}) {
                   : variables.lastName
               }
           </h1>
-          <h2>${variables.role == null ? "Your Role" : variables.role}</h2>
-          <h3>${
-            variables.country == null ? "Your Country" : variables.country
-          }</h3>
-          <ul class="position-right">
+          <h2>${variables.role == null ? "Your Role " : variables.role}</h2>
+          <h3> ${variables.city == null ? "Your city " : variables.city}, ${
+    variables.country == null ? "Your Country" : variables.country
+  }</h3>
+
+          <ul class=${variables.socialMediaPosition}>
             <li><a href="https://twitter.com/cirstopher"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/Cristopher5917K"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://linkedin.com/school/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/j.c.g.a_"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
