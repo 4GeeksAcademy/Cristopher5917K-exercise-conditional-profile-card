@@ -46,10 +46,18 @@ function render(variables = {}) {
   }</h3>
 
           <ul class=${variables.socialMediaPosition}>
-            <li><a href="https://twitter.com/cirstopher"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/Cristopher5917K"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/j.c.g.a_"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${
+              variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/school/${
+              variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
